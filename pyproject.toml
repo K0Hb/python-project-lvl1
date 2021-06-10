@@ -10,6 +10,8 @@ packages = [
 python = "^3.8"
 [tool.poetry.dev-dependencies]
 
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:brain_games"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
