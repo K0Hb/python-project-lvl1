@@ -1,0 +1,2 @@
+nstall:
+		poetry install
