@@ -13,16 +13,22 @@ def list_questions():
         number = random.randint(1, 100)
         print('Question:' + str(number) )
         answer = prompt.string('Your answer:')
-        if number % 2 == 0 and answer == 'yes':
+        if  number % 2 == 0 and answer == 'yes':
             Question += 1
-            print('Correct! \n Congratulations,' + name +'!')
+            print('Correct!')
+            if Question == 4 :
+                    print('Congratulations,' + name + '!')
         elif number % 2 != 0 and answer == 'no':
             Question += 1
-            print('Correct! \n Congratulations,' + name +'!')
+            print('Correct!')
+            if Question == 4 :
+                    print('Congratulations,' + name + '!')
         elif number % 2 == 0 and answer == 'no':
             print("'no' is wrong answer ;(. Correct answer was 'yes'.\n Let's try again," + name + '!' )
             break
         elif number % 2 != 0 and answer == 'yes':
             print("'yes' is wrong answer ;(. Correct answer was 'no'.\n Let's try again," + name + '!' )
             break
+ 
 
+    
