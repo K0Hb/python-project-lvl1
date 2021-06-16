@@ -23,8 +23,10 @@ def list_quest():
             if Question == 4:
                 print('Congratulations,' + name + '!')
         elif number % 2 == 0 and answer == 'no':
-            print("'no' is wrong answer ;(. Correct answer was 'yes'.\n Let's try again," + name + '!')
+            print("'no' is wrong answer ;(. Correct answer was 'yes'.")
+            print("Let's try again," + name + '!')
             break
         elif number % 2 != 0 and answer == 'yes':
-            print("'yes' is wrong answer ;(. Correct answer was 'no'.\n Let's try again," + name + '!')
+            print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+            print("Let's try again," + name + '!')
             break
