@@ -13,7 +13,7 @@ def body_progression():
         number1 = random.randint(1, 30)
         number2 = random.randint(30, 60)
         rnd_number = random.randint(1, 5)
-        findex = random.randint(1, 10)
+        findex = random.randint(2, 10)
         number_x = number1 + (findex * rnd_number)
         print(filter_string(number1, number2, number_x, rnd_number))
         answer = prompt.string('Your answer:')

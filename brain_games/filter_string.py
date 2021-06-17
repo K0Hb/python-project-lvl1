@@ -1,5 +1,5 @@
 def filter_string(number1, number2, number_x, rnd_number):
-    index = 0
+    index = 1
     result = ''
     while index < number2 and index <= 10:
         number1 = number1 + rnd_number
