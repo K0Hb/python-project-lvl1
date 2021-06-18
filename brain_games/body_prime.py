@@ -10,7 +10,7 @@ def body_prime():
     Question = 1
     while Question <= 3:
         number = random.randint(2, 103)
-        print('Question:' + str(number))
+        print('Question: ' + str(number))
         answer = prompt.string('Your answer:')
         prime = isprime(number)
         if answer == 'yes' and prime == bool(True):
