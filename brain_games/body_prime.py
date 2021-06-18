@@ -9,7 +9,7 @@ def body_prime():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     Question = 1
     while Question <= 3:
-        number = random.randint(2, 103)
+        number = random.randint(3, 103)
         print('Question: ' + str(number))
         answer = prompt.string('Your answer:')
         prime = isprime(number)

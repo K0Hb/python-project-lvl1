@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# anw == answer
 import prompt
 import random
 
@@ -11,17 +12,17 @@ def list_quest():
     while Question <= 3:
         number = random.randint(1, 100)
         print('Question: ' + str(number))
-        answer = prompt.string('Your answer:')
-        if number %2 == 0 and answer == 'yes' or number %2 != 0 and answer == 'no':
+        anw = prompt.string('Your answer:')
+        if number % 2 == 0 and anw == 'yes' or number % 2 != 0 and anw == 'no':
             Question += 1
             print('Correct!')
             if Question == 4:
                 print('Congratulations, ' + name + '!')
-        elif number %2 == 0 and answer == 'no' or number == 0:
+        elif number % 2 == 0 and anw == 'no' or number == 0:
             print("'no' is wrong answer ;(. Correct answer was 'yes'.")
             print("Let's try again, " + name + '!')
             break
-        elif number %2 != 0 and answer == 'yes':
+        elif number % 2 != 0 and anw == 'yes':
             print("'yes' is wrong answer ;(. Correct answer was 'no'.")
             print("Let's try again, " + name + '!')
             break
