@@ -13,7 +13,7 @@ def list_quest():
         print('Question:' + str(number))
         answer = prompt.string('Your answer:')
         if number % 2 == 0 and answer == 'yes':
-            Question += 1
+            Question += 1 
             print('Correct!')
             if Question == 4:
                 print('Congratulations,' + name + '!')
@@ -22,7 +22,7 @@ def list_quest():
             print('Correct!')
             if Question == 4:
                 print('Congratulations,' + name + '!')
-        elif number % 2 == 0 and answer == 'no':
+        elif number % 2 == 0 and answer == 'no'or number == 0:
             print("'no' is wrong answer ;(. Correct answer was 'yes'.")
             print("Let's try again," + name + '!')
             break
