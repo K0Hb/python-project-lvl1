@@ -15,7 +15,7 @@ def body_progression():
         rnd_number = random.randint(1, 5)
         findex = random.randint(2, 10)
         number_x = number1 + (findex * rnd_number)
-        print(filter_string(number1, number2, number_x, rnd_number))
+        print('Question: ' + filter_string(number1, number2, number_x, rnd_number))
         answer = prompt.string('Your answer:')
         if int(answer) == number_x:
             progression += 1
