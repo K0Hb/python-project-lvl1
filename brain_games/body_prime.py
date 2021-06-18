@@ -18,7 +18,7 @@ def body_prime():
             print('Correct!')
             if Question == 4:
                 print('Congratulations, ' + name + '!')
-        elif answer == 'no' and not prime == bool(True):
+        elif answer == 'no' and not prime:
             Question += 1
             print('Correct!')
             if Question == 4:
