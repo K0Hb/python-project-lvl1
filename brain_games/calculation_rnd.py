@@ -16,7 +16,7 @@ def generate_culc():
         subtraction = " - "
         multiplication = ' * '
         rnd_oper = random.choice([addition, subtraction, multiplication])
-        print('Question:' + str(number1) + rnd_oper + str(number2))
+        print('Question: ' + str(number1) + rnd_oper + str(number2))
         result = eval_binary_expr(number1, rnd_oper, number2)
         answer = prompt.string('Your answer:')
         if int(answer) == result:
