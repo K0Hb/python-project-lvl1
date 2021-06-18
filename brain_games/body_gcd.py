@@ -12,7 +12,7 @@ def body_gcd():
     while expression <= 3:
         number1 = random.randint(1, 50)
         number2 = random.randint(1, 50)
-        print(' ' + str(number1) + ' ' + str(number2))
+        print('Question: ' + str(number1) + ' ' + str(number2))
         result = gcd_func(number1, number2)
         answer = prompt.string('Your answer:')
         if int(answer) == result:
