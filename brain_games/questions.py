@@ -10,9 +10,9 @@ def list_quest():
     Question = 1
     while Question <= 3:
         number = random.randint(1, 100)
-        print('Question:' + str(number))
+        print('Question: ' + str(number))
         answer = prompt.string('Your answer:')
-        if number % 2 == 0 and answer == 'yes' or number % 2 != 0 and answer == 'no' or number == 0:
+        if number % 2 == 0 and answer == 'yes' or number % 2 != 0 and answer == 'no':
             Question += 1
             print('Correct!')
             if Question == 4:
