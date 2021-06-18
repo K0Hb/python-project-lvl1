@@ -23,5 +23,5 @@ def list_quest():
             break
         elif number % 2 != 0 and answer == 'yes':
             print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-            print("Let's try again," + name + '!')
+            print("Let's try again, " + name + '!')
             break
