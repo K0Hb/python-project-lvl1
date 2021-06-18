@@ -21,5 +21,6 @@ def body_gcd():
             if expression == 4:
                 print('Congratulations,' + name + '!')
         elif int(answer) != result:
-            print(str(answer) + ' is wrong answer ;(. Correct answer was' + str(result) + ". \n Let's try again," + name + '!')
+            print(str(answer) + ' is wrong answer ;(. Correct answer was' + str(result) + ".")
+            print("Let's try again," + name + '!')
             break

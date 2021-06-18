@@ -13,12 +13,12 @@ def body_prime():
         print('Question:' + str(number))
         answer = prompt.string('Your answer:')
         prime = isprime(number)
-        if answer == 'yes' and prime == True:
+        if answer == 'yes' and prime == bool(True):
             Question += 1
             print('Correct!')
             if Question == 4:
                 print('Congratulations,' + name + '!')
-        elif answer == 'no' and prime == False:
+        elif answer == 'no' and not prime == bool(True):
             Question += 1
             print('Correct!')
             if Question == 4:

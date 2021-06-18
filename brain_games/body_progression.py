@@ -23,6 +23,6 @@ def body_progression():
             if progression == 4:
                 print('Congratulations,' + name + '!')
         elif int(answer) != number_x:
-            print(str(answer) + ' is wrong answer ;(. Correct answer was' + str(number_x) + ".")
+            print(str(answer) + 'is wrong answer ;(. Correct answer was' + str(number_x) + ".")
             print("Let's try again," + name + '!')
             break
