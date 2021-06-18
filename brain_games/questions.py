@@ -16,7 +16,7 @@ def list_quest():
             Question += 1
             print('Correct!')
             if Question == 4:
-                print('Congratulations,' + name + '!')
+                print('Congratulations, ' + name + '!')
         elif number % 2 == 0 and answer == 'no' or number == 0:
             print("'no' is wrong answer ;(. Correct answer was 'yes'.")
             print("Let's try again," + name + '!')
