@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # anw == answer
+
 import prompt
 import random
 

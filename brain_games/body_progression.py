@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 import prompt
 import random
 from brain_games.filter_string import filter_string

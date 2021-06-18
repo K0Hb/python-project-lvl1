@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 def filter_string(number1, number2, zvx, rnd_number):
     index = 1
     result = ''

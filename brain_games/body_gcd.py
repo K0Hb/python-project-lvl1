@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 import prompt
 import random
 from brain_games.gcd_func import gcd_func

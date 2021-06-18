@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import prompt
 import random
 from brain_games.isprime import isprime

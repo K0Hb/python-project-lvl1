@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 import prompt
 import random
 from brain_games.operator import eval_binary_expr
