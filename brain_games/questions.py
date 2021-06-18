@@ -19,7 +19,7 @@ def list_quest():
                 print('Congratulations, ' + name + '!')
         elif number % 2 == 0 and answer == 'no' or number == 0:
             print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-            print("Let's try again," + name + '!')
+            print("Let's try again, " + name + '!')
             break
         elif number % 2 != 0 and answer == 'yes':
             print("'yes' is wrong answer ;(. Correct answer was 'no'.")

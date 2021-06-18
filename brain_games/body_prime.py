@@ -17,13 +17,13 @@ def body_prime():
             Question += 1
             print('Correct!')
             if Question == 4:
-                print('Congratulations,' + name + '!')
+                print('Congratulations, ' + name + '!')
         elif answer == 'no' and not prime == bool(True):
             Question += 1
             print('Correct!')
             if Question == 4:
-                print('Congratulations,' + name + '!')
+                print('Congratulations, ' + name + '!')
         else:
             print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-            print("Let's try again," + name + '!')
+            print("Let's try again, " + name + '!')
             break
