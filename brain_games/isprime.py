@@ -1,8 +1,8 @@
 def isprime(number):
-    if number == 1:
+    for a in range (2, n):
+      if (number % a) == 0:
         return False
-    for x in range(2, number):
-        if number % x == 0:
-            return False
-        else:
-            return True
+        break
+      elif (number // a) == 1:
+        return True
+        break 
