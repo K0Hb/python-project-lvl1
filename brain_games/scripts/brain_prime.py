@@ -3,7 +3,7 @@
 from brain_games.body_prime import body_prime
 
 
-def brain_prime():
+def main():
     print('Welcome to the Brain Games!')
     body_prime()
 

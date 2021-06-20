@@ -3,7 +3,7 @@
 from brain_games.body_gcd import body_gcd
 
 
-def brain_gcd():
+def main():
     print('Welcome to the Brain Games!')
     body_gcd()
 

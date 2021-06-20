@@ -3,7 +3,7 @@
 from brain_games.questions import list_quest
 
 
-def brain_even():
+def main():
     print('Welcome to the Brain Games!')
     list_quest()
 
