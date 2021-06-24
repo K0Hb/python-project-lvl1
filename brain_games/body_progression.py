@@ -17,7 +17,7 @@ def body_progression(name):
         progression_line = filter_string(number1, number2, correct_answer, rnd_number)
         print('Question:' + progression_line)
         answer = prompt.string('Your answer:')
-        Congratulations_fail(answer, correct_answer, name, expression)
+        expression = Congratulations_fail(answer, correct_answer, name, expression)
 
 
 def filter_string(number1, number2, zvx, rnd_number):

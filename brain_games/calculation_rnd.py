@@ -9,7 +9,7 @@ import random
 def generate_culc(name):
     print('What is the result of the expression?')
     expression = 1
-    while int(expression) <= 3:
+    while expression <= 3:
         number1 = random.randint(1, 50)
         number2 = random.randint(1, 50)
         addition = '+'
