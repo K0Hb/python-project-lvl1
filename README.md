@@ -15,5 +15,6 @@
 |brain-gcd|Find the greatest common divisor of given numbers and enter answer|
 |brain-prime|Answer "yes" if given number is prime. Otherwise answer "no"|
 |brain-progression|Enter the missing numbers in the progression|
+
 <a href="https://asciinema.org/a/421399" target="_blank"><img src="https://asciinema.org/a/421399.svg" /></a>
 
