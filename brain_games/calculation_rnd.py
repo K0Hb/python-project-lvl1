@@ -1,13 +1,11 @@
 #!/usr/bin/env python
 
 import prompt
+import operator
 import random
-from brain_games.operator import eval_binary_expr
 
 
-def generate_culc():
-    name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + '!')
+def generate_culc(name):
     print('What is the result of the expression?')
     expression = 1
     while expression <= 3:
@@ -17,15 +15,16 @@ def generate_culc():
         subtraction = "-"
         multiplication = '*'
         rnd_oper = random.choice([addition, subtraction, multiplication])
-        print('Question: ' + str(number1) + ' ' + rnd_oper + ' ' + str(number2))
-        result = eval_binary_expr(number1, rnd_oper, number2)
+        print(f"Question: {str(number1)} {rnd_oper} {str(number2)}")
+        correct_answer = eval_binary_expr(number1, rnd_oper, number2)
         answer = prompt.string('Your answer:')
-        if int(answer) == result:
-            expression += 1
-            print('Correct!')
-            if expression == 4:
-                print('Congratulations, ' + name + '!')
-        elif int(answer) != result:
-            print(f'{answer} is wrong answer ;(. Correct answer was {result}.')
-            print("Let's try again, " + name + '!')
-            break
+        return (answer, correct_answer, name, expression)
+
+
+def eval_binary_expr(op1, oper, op2,
+                     get_operator_fn={
+                         '+': operator.add,
+                         '-': operator.sub,
+                         '*': operator.mul, }.get):
+    op1, op2 = int(op1), int(op2)
+    return get_operator_fn(oper)(op1, op2)

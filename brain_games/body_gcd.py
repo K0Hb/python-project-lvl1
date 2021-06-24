@@ -2,26 +2,25 @@
 
 import prompt
 import random
-from brain_games.gcd_func import gcd_func
 
 
-def body_gcd():
-    name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + ' !')
+def body_gcd(name):
     print('Find the greatest common divisor of given numbers.')
     expression = 1
     while expression <= 3:
         number1 = random.randint(1, 50)
         number2 = random.randint(1, 50)
-        print('Question: ' + str(number1) + ' ' + str(number2))
-        result = gcd_func(number1, number2)
+        print(f'Question: {number1} {number2}')
+        correct_answer = gcd_func(number1, number2)
         answer = prompt.string('Your answer:')
-        if int(answer) == result:
-            expression += 1
-            print('Correct!')
-            if expression == 4:
-                print('Congratulations, ' + name + '!')
-        elif int(answer) != result:
-            print(f'{answer} is wrong answer ;(. Correct answer was {result}.')
-            print("Let's try again, " + name + '!')
-            break
+        return (answer, correct_answer, name, expression)
+
+
+def gcd_func(number1, number2):
+    while number1 != 0 and number2 != 0:
+        if number1 > number2:
+            number1 = number1 % number2
+        else:
+            number2 = number2 % number1
+    gcd = number1 + number2
+    return gcd

@@ -2,29 +2,33 @@
 
 import prompt
 import random
-from brain_games.filter_string import filter_string
 
 
-def body_progression():
-    name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + ' !')
+def body_progression(name):
     print('What number is missing in the progression?')
-    progression = 1
-    while progression <= 3:
+    expression = 1
+    while expression <= 3:
         number1 = random.randint(1, 30)
         number2 = random.randint(30, 60)
         rnd_number = random.randint(1, 5)
         findex = random.randint(2, 10)
-        zvx = number1 + (findex * rnd_number)
-        progression_line = filter_string(number1, number2, zvx, rnd_number)
+        correct_answer = number1 + (findex * rnd_number)
+        progression_line = filter_string(number1, number2, correct_answer, rnd_number)
         print('Question:' + progression_line)
         answer = prompt.string('Your answer:')
-        if int(answer) == zvx:
-            progression += 1
-            print('Correct!')
-            if progression == 4:
-                print('Congratulations, ' + name + '!')
-        elif int(answer) != zvx:
-            print(f'{answer} is wrong answer ;(. Correct answer was {zvx}.')
-            print("Let's try again, " + name + '!')
-            break
+        return (answer, correct_answer, name, expression)
+
+
+def filter_string(number1, number2, zvx, rnd_number):
+    index = 1
+    result = ''
+    while index < number2 and index <= 10:
+        number1 = number1 + rnd_number
+        x = number1 + rnd_number
+        if x != zvx:
+            result = result + " " + str(x)
+            index += 1
+        elif x == zvx:
+            result += " " + ".."
+            index += 1
+    return result

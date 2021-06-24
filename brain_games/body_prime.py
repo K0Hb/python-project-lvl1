@@ -2,12 +2,9 @@
 
 import prompt
 import random
-from brain_games.isprime import isprime
 
 
-def body_prime():
-    name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + ' !')
+def body_prime(name):
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     Question = 1
     while Question <= 3:
@@ -19,13 +16,23 @@ def body_prime():
             Question += 1
             print('Correct!')
             if Question == 4:
-                print('Congratulations, ' + name + '!')
+                print(f'Congratulations, {name}!')
         elif answer == 'no' and not prime:
             Question += 1
             print('Correct!')
             if Question == 4:
-                print('Congratulations, ' + name + '!')
+                print(f'Congratulations, {name}!')
         else:
             print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-            print("Let's try again, " + name + '!')
+            print(f"Let's try again, {name}!")
+            break
+
+
+def isprime(number):
+    for a in range(2, number):
+        if (number % a) == 0:
+            return False
+            break
+        elif (number // a) == 1:
+            return True
             break

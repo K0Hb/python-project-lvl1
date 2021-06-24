@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 
 from brain_games.questions import list_quest
+from brain_games.What_is_your_name import welcome_user
 
 
 def main():
-    print('Welcome to the Brain Games!')
+    welcome_user()
     list_quest()
 
 
