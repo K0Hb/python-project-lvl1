@@ -9,12 +9,12 @@ def body_progression(name):
     print('What number is missing in the progression?')
     expression = 1
     while expression <= 3:
-        number1 = random.randint(1, 30)
-        number2 = random.randint(30, 60)
+        num1 = random.randint(1, 30)
+        num2 = random.randint(30, 60)
         rnd_number = random.randint(1, 5)
         findex = random.randint(2, 10)
-        correct_answer = number1 + (findex * rnd_number)
-        progression_line = filter_string(number1, number2, correct_answer, rnd_number)
+        correct_answer = num1 + (findex * rnd_number)
+        progression_line = filter_string(num1, num2, correct_answer, rnd_number)
         print('Question:' + progression_line)
         answer = prompt.string('Your answer:')
         expression = Congratulations_fail(answer, correct_answer, name, expression)
