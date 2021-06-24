@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from brain_games.Congratulations_fail import Congratulations_fail
 
 import prompt
 import random
@@ -16,7 +17,7 @@ def body_progression(name):
         progression_line = filter_string(number1, number2, correct_answer, rnd_number)
         print('Question:' + progression_line)
         answer = prompt.string('Your answer:')
-        return (answer, correct_answer, name, expression)
+        Congratulations_fail(answer, correct_answer, name, expression)
 
 
 def filter_string(number1, number2, zvx, rnd_number):

@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from brain_games.Congratulations_fail import Congratulations_fail
 
 import prompt
 import random
@@ -13,7 +14,7 @@ def body_gcd(name):
         print(f'Question: {number1} {number2}')
         correct_answer = gcd_func(number1, number2)
         answer = prompt.string('Your answer:')
-        return (answer, correct_answer, name, expression)
+        Congratulations_fail(answer, correct_answer, name, expression)
 
 
 def gcd_func(number1, number2):
