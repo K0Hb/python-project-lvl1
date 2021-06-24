@@ -7,7 +7,7 @@ from brain_games.Congratulations_fail import Congratulations_fail
 
 def main():
     name = welcome_user()
-    generate_culc(name)
+    (answer, correct_answer, expression) = generate_culc(name)
     Congratulations_fail()
 
 

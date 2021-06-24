@@ -7,7 +7,7 @@ from brain_games.Congratulations_fail import Congratulations_fail
 
 def main():
     name = welcome_user()
-    body_gcd(name)
+    (answer, correct_answer, expression) = body_gcd(name)
     Congratulations_fail()
 
 
