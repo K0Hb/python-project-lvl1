@@ -10,8 +10,8 @@ def generate_culc(name):
     print('What is the result of the expression?')
     expression = 1
     while expression <= 3:
-        number1 = random.randint(1, 50)
-        number2 = random.randint(1, 50)
+        number1 = random.randint(1, 25)
+        number2 = random.randint(1, 25)
         addition = '+'
         subtraction = "-"
         multiplication = '*'
@@ -20,6 +20,7 @@ def generate_culc(name):
         correct_answer = eval_binary_expr(number1, rnd_oper, number2)
         answer = prompt.string('Your answer:')
         expression = Congratulations_fail(answer, correct_answer, name, expression)
+        print(expression)
 
 
 def eval_binary_expr(op1, oper, op2,
