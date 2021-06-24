@@ -16,8 +16,3 @@
 |brain-prime|Answer "yes" if given number is prime. Otherwise answer "no"|
 |brain-progression|Enter the missing numbers in the progression|
 
-<<<<<<< HEAD
-<a href="https://asciinema.org/a/421399" target="_blank"><img src="https://asciinema.org/a/421399.svg" /></a>
-=======
-<a href="https://asciinema.org/a/421399" target="_blank"><img src="https://asciinema.org/a/421399.svg" /></a>
->>>>>>> d35e4bdb2db429e55df267316845b8cee88805d7
