@@ -4,7 +4,7 @@ import prompt
 import random
 
 
-def body_gcd(name):
+def body_gcd():
     print('Find the greatest common divisor of given numbers.')
     expression = 1
     while expression <= 3:
