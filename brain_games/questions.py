@@ -5,7 +5,7 @@ import prompt
 import random
 
 
-def list_quest():
+def list_quest(name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
     Question = 1
     while Question <= 3:
