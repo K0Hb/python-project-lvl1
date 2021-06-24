@@ -4,7 +4,7 @@ import prompt
 import random
 
 
-def body_progression():
+def body_progression(name):
     print('What number is missing in the progression?')
     expression = 1
     while expression <= 3:

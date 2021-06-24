@@ -5,8 +5,8 @@ from brain_games.What_is_your_name import welcome_user
 
 
 def main():
-    welcome_user()
-    generate_culc()
+    name = welcome_user()
+    generate_culc(name)
 
 
 if __name__ == '__main__':

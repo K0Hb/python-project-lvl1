@@ -5,8 +5,8 @@ from brain_games.What_is_your_name import welcome_user
 
 
 def main():
-    welcome_user()
-    body_progression()
+    name = welcome_user()
+    body_progression(name)
 
 
 if __name__ == '__main__':

@@ -5,7 +5,7 @@ import operator
 import random
 
 
-def generate_culc():
+def generate_culc(name):
     print('What is the result of the expression?')
     expression = 1
     while expression <= 3:

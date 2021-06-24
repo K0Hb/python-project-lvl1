@@ -6,8 +6,8 @@ from brain_games.Congratulations_fail import Congratulations_fail
 
 
 def main():
-    welcome_user()
-    body_gcd()
+    name = welcome_user()
+    body_gcd(name)
     Congratulations_fail()
 
 
