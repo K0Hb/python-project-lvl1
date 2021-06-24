@@ -20,7 +20,6 @@ def generate_culc(name):
         correct_answer = eval_binary_expr(number1, rnd_oper, number2)
         answer = prompt.string('Your answer:')
         expression = Congratulations_fail(answer, correct_answer, name, expression)
-        print(expression)
 
 
 def eval_binary_expr(op1, oper, op2,
