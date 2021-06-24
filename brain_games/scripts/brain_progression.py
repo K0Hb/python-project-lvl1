@@ -8,7 +8,6 @@ from brain_games.Congratulations_fail import Congratulations_fail
 def main():
     name = welcome_user()
     body_progression(name)
-    Congratulations_fail()
 
 
 if __name__ == '__main__':
