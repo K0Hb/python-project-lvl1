@@ -8,6 +8,5 @@ coverage.xml
 .pytest_cache/
 .vim
 .idea
-Makefile
 .gitignore
 .github/workflows/README.md
