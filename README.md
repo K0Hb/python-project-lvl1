@@ -5,7 +5,7 @@
 [![GitHub Actions Demo](https://github.com/K0Hb/python-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/K0Hb/python-project-lvl1/actions/workflows/github-actions-demo.yml)
 
 ## Welcome to the repository page of my first project. 
-## Installation
+
 
 ## Games and their content
 |game|rules|
@@ -15,6 +15,7 @@
 |brain-gcd|Find the greatest common divisor of given numbers and enter answer|
 |brain-prime|Answer "yes" if given number is prime. Otherwise answer "no"|
 |brain-progression|Enter the missing numbers in the progression|
+There are 3 questions in each game , if all the answers are correct, you will receive congratulations:)
 
 <a href="https://asciinema.org/a/421399" target="_blank"><img src="https://asciinema.org/a/421399.svg" /></a>
 
