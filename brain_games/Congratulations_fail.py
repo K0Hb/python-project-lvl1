@@ -10,7 +10,10 @@ def Congratulations_fail(answer, correct_answer, name, expression):
         print('Correct!')
         return expression
     elif int(answer) != correct_answer:
-        print(f'{answer} is wrong answer ;(. Correct answer was {correct_answer}.')
+        print(
+            f'{answer} is wrong answer ;(. ' +
+            f'Correct answer was {correct_answer}.'
+        )
         print(f"Let's try again, {name}!")
         expression += 3
         return expression
