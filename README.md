@@ -5,14 +5,14 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 [![GitHub Actions Demo](https://github.com/K0Hb/python-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/K0Hb/python-project-lvl1/actions/workflows/github-actions-demo.yml)
 ____
-## Welcome to the repository page of my **first** project. 
+### Welcome to the repository page of my **first** project. 
 ______
-## Install 
+### Install 
 Create a virtual environment and install the distribution using the command `pip install git+https://github.com/K0Hb/python-project-lvl1.git`
 _______
 
 
-## Games and their content
+### Games and their content
 |game|rules|
 |----|-----|
 |brain-calc|Make an expression and enter the answer|
