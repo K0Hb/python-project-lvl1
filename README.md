@@ -7,7 +7,7 @@
 ____
 ### Welcome to the repository page of my **first** project. 
 ______
-### Install 
+### Installation 
 Create a virtual environment and install the distribution using the command `pip install git+https://github.com/K0Hb/python-project-lvl1.git`
 _______
 
