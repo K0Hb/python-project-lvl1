@@ -2,37 +2,27 @@
 
 import prompt
 import random
+from brain_games.no_yes import no_yes
 
 
-def body_prime(name):
+def body_prime(name, limit_round):
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     Question = 1
-    while Question <= 3:
-        number = random.randint(3, 103)
+    while Question <= limit_round:
+        number = random.randint(-10, 103)
         print('Question: ' + str(number))
         answer = prompt.string('Your answer:')
         prime = isprime(number)
-        if answer == 'yes' and prime == bool(True):
-            Question += 1
-            print('Correct!')
-            if Question == 4:
-                print(f'Congratulations, {name}!')
-        elif answer == 'no' and not prime:
-            Question += 1
-            print('Correct!')
-            if Question == 4:
-                print(f'Congratulations, {name}!')
-        else:
-            print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-            print(f"Let's try again, {name}!")
-            break
+        if prime == bool(True):
+            correct_answer = 'yes'
+        elif not prime or number <= 1:
+            correct_answer = 'no'
+        Question = no_yes(name, correct_answer, answer, Question)
 
 
 def isprime(number):
     for a in range(2, number):
         if (number % a) == 0:
             return False
-            break
         elif (number // a) == 1:
             return True
-            break

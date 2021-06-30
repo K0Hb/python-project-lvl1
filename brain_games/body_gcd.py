@@ -5,17 +5,17 @@ import prompt
 import random
 
 
-def body_gcd(name):
+def body_gcd(name, limit_round):
     print('Find the greatest common divisor of given numbers.')
-    expression = 1
-    while expression <= 3:
+    Question = 1
+    while Question <= limit_round:
         number1 = random.randint(1, 50)
         number2 = random.randint(1, 50)
         print(f'Question: {number1} {number2}')
         correct_answer = gcd_func(number1, number2)
         answer = prompt.string('Your answer:')
-        expression = Congratulations_fail(answer, correct_answer,
-                                          name, expression)
+        Question = Congratulations_fail(answer, correct_answer,
+                                        name, Question)
 
 
 def gcd_func(number1, number2):

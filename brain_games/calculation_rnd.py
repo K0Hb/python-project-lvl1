@@ -6,12 +6,12 @@ import operator
 import random
 
 
-def generate_culc(name):
+def generate_culc(name, limit_round):
     print('What is the result of the expression?')
-    expression = 1
-    while expression <= 3:
+    Question = 1
+    while Question <= limit_round:
         number1 = random.randint(1, 25)
-        number2 = random.randint(1, 25)
+        number2 = random.randint(1, 10)
         addition = '+'
         subtraction = "-"
         multiplication = '*'
@@ -19,8 +19,8 @@ def generate_culc(name):
         print(f"Question: {str(number1)} {rnd_oper} {str(number2)}")
         correct_answer = eval_binary_expr(number1, rnd_oper, number2)
         answer = prompt.string('Your answer:')
-        expression = Congratulations_fail(answer, correct_answer,
-                                          name, expression)
+        Question = Congratulations_fail(answer, correct_answer,
+                                        name, Question)
 
 
 def eval_binary_expr(op1, oper, op2,

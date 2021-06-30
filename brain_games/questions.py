@@ -3,25 +3,18 @@
 
 import prompt
 import random
+from brain_games.no_yes import no_yes
 
 
-def list_quest(name):
+def list_quest(name, limit_round):
     print('Answer "yes" if the number is even, otherwise answer "no".')
     Question = 1
-    while Question <= 3:
+    while Question <= limit_round:
         number = random.randint(1, 100)
         print('Question: ' + str(number))
-        anw = prompt.string('Your answer:')
-        if number % 2 == 0 and anw == 'yes' or number % 2 != 0 and anw == 'no':
-            Question += 1
-            print('Correct!')
-            if Question == 4:
-                print(f'Congratulations, {name}!')
-        elif number % 2 == 0 and anw == 'no' or number == 0:
-            print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-            print(f"Let's try again, {name}!")
-            break
-        elif number % 2 != 0 and anw == 'yes':
-            print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-            print(f"Let's try again, {name}!")
-            break
+        answer = prompt.string('Your answer:')
+        if number % 2 == 0:
+            correct_answer = 'yes'
+        elif number % 2 != 0 or number == 0:
+            correct_answer = 'no'
+        Question = no_yes(name, correct_answer, answer, Question)
