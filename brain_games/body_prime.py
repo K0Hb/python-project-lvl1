@@ -13,7 +13,7 @@ def body_prime(name, limit_round):
         print('Question: ' + str(number))
         answer = prompt.string('Your answer:')
         prime = isprime(number)
-        if prime == bool(True):
+        if prime == bool(True) and number > 1:
             correct_answer = 'yes'
         elif not prime or number <= 1:
             correct_answer = 'no'
