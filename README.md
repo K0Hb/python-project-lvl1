@@ -12,7 +12,7 @@ Create a virtual environment and install the distribution using the command `pip
 _______
 
 
-### Games and their content:
+### Games and their content
 |game|rules|
 |----|-----|
 |brain-calc|Make an expression and enter the answer|
