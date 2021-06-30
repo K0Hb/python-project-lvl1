@@ -20,9 +20,13 @@ def body_prime(name, limit_round):
         Question = no_yes(name, correct_answer, answer, Question)
 
 
-def isprime(number):
-    for a in range(2, number):
-        if (number % a) == 0:
-            return False
-        elif (number // a) == 1:
-            return True
+def isprime(n):
+    if (n == 1):
+        return False
+    elif (n == 2):
+        return True
+    else:
+        for x in range(2, n):
+            if(n % x == 0):
+                return False
+        return True
