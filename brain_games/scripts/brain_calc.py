@@ -1,13 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-from brain_games.calculation_rnd import generate_culc
-from brain_games.What_is_your_name import welcome_user
+from brain_games.engine import play
+from brain_games.games import calc
 
 
 def main():
-    name = welcome_user()
-    limit_round = 3
-    generate_culc(name, limit_round)
+    play(calc)
 
 
 if __name__ == '__main__':

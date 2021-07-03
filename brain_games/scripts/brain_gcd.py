@@ -1,13 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-from brain_games.body_gcd import body_gcd
-from brain_games.What_is_your_name import welcome_user
+from brain_games.engine import play
+from brain_games.games import gcd
 
 
 def main():
-    name = welcome_user()
-    limit_round = 3
-    body_gcd(name, limit_round)
+    play(gcd)
 
 
 if __name__ == '__main__':
