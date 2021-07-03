@@ -16,7 +16,7 @@ def ask_question(expression):
     print(f'Question: {number1} {operation} {number2}')
 
 
-def solve(expression):
+def decision(expression):
     number1, operation, number2 = expression
     if operation == '+':
         return str(number1 + number2)
