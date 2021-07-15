@@ -1,10 +1,16 @@
 import random
 
 
-Conditions = 'What number is missing in the progression?'
+TASK = 'What number is missing in the progression?'
+START_NUBMER_LENGTH = 5
+START_NUMBER_START = 0
+START_NUMBER_STEP = 1
+FIFNISH_NUMBER_LENGTH = 10
+FIFNISH_NUMBER_START = 50
+FIFNISH_NUMBER_STEP = 10
 
 
-def progression_generate(progression):
+def function_output_progression(progression):
     indexes = len(progression) - 1
     index = random.randint(0, indexes)
     correct_answer = progression[index]
@@ -13,9 +19,9 @@ def progression_generate(progression):
 
 
 def generate_question():
-    length = random.randint(5, 10)
-    start = random.randint(0, 50)
-    step = random.randint(1, 10)
+    length = random.randint(START_NUBMER_LENGTH, FIFNISH_NUMBER_LENGTH)
+    start = random.randint(START_NUMBER_START, FIFNISH_NUMBER_START)
+    step = random.randint(START_NUMBER_STEP, FIFNISH_NUMBER_STEP)
     stop = length * step + start
 
     list = []
@@ -23,14 +29,15 @@ def generate_question():
     for i in range(start, stop, step):
         list.append(str(i))
 
-    expression = progression_generate(list)
+    expression = function_output_progression(list)
     return expression
 
 
 def ask_question(expression):
     correct_answer, progression = expression
     progression = ' '.join(progression)
-    print(f'Question: {progression}')
+    text_question = f'Question: {progression}'
+    return text_question
 
 
 def decision(expression):

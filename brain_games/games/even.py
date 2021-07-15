@@ -1,16 +1,19 @@
 import random
 
 
-Conditions = 'Answer "yes" if the number is even, otherwise answer "no".'
+TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
+START_NUMBER = 0
+FINISH_NUMBER = 100
 
 
 def generate_question():
-    number = random.randint(0, 100)
+    number = random.randint(START_NUMBER, FINISH_NUMBER)
     return number
 
 
 def ask_question(number):
-    print(f'Question: {number}')
+    text_question = f'Question: {number}'
+    return text_question
 
 
 def is_even(number):

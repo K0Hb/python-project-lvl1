@@ -1,6 +1,6 @@
 import prompt
 
-limit_round = 3
+QUANTITY_ROUND = 3
 
 
 def welcome_user():
@@ -12,20 +12,21 @@ def welcome_user():
 
 def play(game):
     name = welcome_user()
-    print(game.Conditions)
-    game_rounds = limit_round
-    while game_rounds:
+    print(game.TASK)
+    counter_rounds = QUANTITY_ROUND
+    while counter_rounds:
         question = game.generate_question()
-        game.ask_question(question)
+        text_question = game.ask_question(question)
+        print(text_question)
         user_answer = prompt.string('Your answer: ')
         correct_answer = game.decision(question)
         if correct_answer == user_answer:
             print('Correct!')
-            game_rounds -= 1
+            counter_rounds -= 1
         else:
             print(f"'{user_answer}' is wrong answer ;(. \
 Correct answer was '{correct_answer}'.")
             print(f'Let\'s try again, {name}!')
             break
-    if not game_rounds:
+    if not counter_rounds:
         print(f'Congratulations, {name}!')
