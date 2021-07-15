@@ -18,7 +18,7 @@ def ask_question(number):
 
 def is_prime(number):
     START_NUBMER = 2
-    for number_enumeration in range(START_NUBMER, number+1):
+    for number_enumeration in range(START_NUBMER, number + 1):
         if number % number_enumeration == 0:
             break
     return number == number_enumeration
