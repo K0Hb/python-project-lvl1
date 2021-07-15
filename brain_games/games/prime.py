@@ -15,6 +15,7 @@ def ask_question(number):
     text_question = f'Question: {number}'
     if is_prime(number):
         correct_answer = 'yes'
+        return text_question, correct_answer
     correct_answer = 'no'
     return text_question, correct_answer
 
