@@ -16,10 +16,9 @@ def play(game):
     counter_rounds = QUANTITY_ROUND
     while counter_rounds:
         question = game.generate_question()
-        text_question = game.ask_question(question)
+        text_question, correct_answer = game.ask_question(question)
         print(text_question)
         user_answer = prompt.string('Your answer: ')
-        correct_answer = game.decision(question)
         if correct_answer == user_answer:
             print('Correct!')
             counter_rounds -= 1

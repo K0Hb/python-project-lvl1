@@ -13,14 +13,11 @@ def generate_question():
 
 def ask_question(number):
     text_question = f'Question: {number}'
-    return text_question
+    if is_even(number):
+        correct_answer = 'yes'
+    correct_answer = 'no'
+    return text_question, correct_answer
 
 
 def is_even(number):
     return number % 2 == 0
-
-
-def decision(number):
-    if is_even(number):
-        return 'yes'
-    return 'no'

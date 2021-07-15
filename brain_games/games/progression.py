@@ -37,9 +37,4 @@ def ask_question(expression):
     correct_answer, progression = expression
     progression = ' '.join(progression)
     text_question = f'Question: {progression}'
-    return text_question
-
-
-def decision(expression):
-    correct_answer, progression = expression
-    return correct_answer
+    return text_question, correct_answer

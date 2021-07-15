@@ -13,7 +13,10 @@ def generate_question():
 
 def ask_question(number):
     text_question = f'Question: {number}'
-    return text_question
+    if is_prime(number):
+        correct_answer = 'yes'
+    correct_answer = 'no'
+    return text_question, correct_answer
 
 
 def is_prime(number):
@@ -22,9 +25,3 @@ def is_prime(number):
         if number % number_enumeration == 0:
             break
     return number == number_enumeration
-
-
-def decision(number):
-    if is_prime(number):
-        return 'yes'
-    return 'no'

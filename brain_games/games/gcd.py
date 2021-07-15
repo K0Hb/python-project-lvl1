@@ -16,14 +16,10 @@ def generate_question():
 def ask_question(expression):
     number1, number2 = expression
     text_question = f'Question: {number1} {number2}'
-    return text_question
-
-
-def decision(expression):
-    number1, number2 = expression
     while number1 != 0 and number2 != 0:
         if number1 > number2:
             number1 = number1 % number2
         else:
             number2 = number2 % number1
-    return str(number1 + number2)
+    correct_answer = str(number1 + number2)
+    return text_question, correct_answer
