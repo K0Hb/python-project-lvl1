@@ -3,7 +3,7 @@ import random
 
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 START_NUBMER = 2
-FINISH_NUMBER = 56
+FINISH_NUMBER = 57
 
 
 def generate_question():
