@@ -8,11 +8,7 @@ FINISH_NUMBER = 56
 
 def generate_question():
     number = random.randint(START_NUBMER, FINISH_NUMBER)
-    return number
-
-
-def ask_question(number):
-    text_question = f'Question: {number}'
+    text_question = number
     if is_prime(number):
         correct_answer = 'yes'
         return text_question, correct_answer
@@ -21,7 +17,6 @@ def ask_question(number):
 
 
 def is_prime(number):
-    START_NUBMER = 2
     for number_enumeration in range(START_NUBMER, number + 1):
         if number % number_enumeration == 0:
             break

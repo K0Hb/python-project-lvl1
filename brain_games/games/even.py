@@ -8,11 +8,7 @@ FINISH_NUMBER = 100
 
 def generate_question():
     number = random.randint(START_NUMBER, FINISH_NUMBER)
-    return number
-
-
-def ask_question(number):
-    text_question = f'Question: {number}'
+    text_question = number
     if is_even(number):
         correct_answer = 'yes'
         return text_question, correct_answer

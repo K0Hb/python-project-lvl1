@@ -10,7 +10,7 @@ FIFNISH_NUMBER_START = 50
 FIFNISH_NUMBER_STEP = 10
 
 
-def function_output_progression(progression):
+def function_gap_progression(progression):
     indexes = len(progression) - 1
     index = random.randint(0, indexes)
     correct_answer = progression[index]
@@ -29,12 +29,8 @@ def generate_question():
     for i in range(start, stop, step):
         list.append(str(i))
 
-    expression = function_output_progression(list)
-    return expression
+    correct_answer, progression = function_gap_progression(list)
 
-
-def ask_question(expression):
-    correct_answer, progression = expression
     progression = ' '.join(progression)
-    text_question = f'Question: {progression}'
+    text_question = progression
     return text_question, correct_answer

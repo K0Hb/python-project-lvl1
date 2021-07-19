@@ -3,21 +3,15 @@ import prompt
 QUANTITY_ROUND = 3
 
 
-def welcome_user():
+def play(game):
     print('Welcome to the Brain games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    return name
-
-
-def play(game):
-    name = welcome_user()
     print(game.TASK)
     counter_rounds = QUANTITY_ROUND
     while counter_rounds:
-        question = game.generate_question()
-        text_question, correct_answer = game.ask_question(question)
-        print(text_question)
+        text_question, correct_answer = game.generate_question()
+        print(f'Question: {text_question}')
         user_answer = prompt.string('Your answer: ')
         if correct_answer == user_answer:
             print('Correct!')
